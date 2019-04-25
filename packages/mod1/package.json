@@ -1,0 +1,19 @@
+{
+  "name": "babel7-demo",
+  "version": "1.0.0",
+  "description": "babel7-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "npx babel --root-mode upward src --out-dir lib"
+  },
+  "keywords": [
+    "babel7"
+  ],
+  "author": "jovysun",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3"
+  },
+  "dependencies": {}
+}

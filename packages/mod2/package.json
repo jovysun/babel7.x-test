@@ -1,0 +1,20 @@
+{
+  "name": "babel7-demo",
+  "version": "1.0.0",
+  "description": "babel7-demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "webpack --mode development --config webpack.config.js"
+  },
+  "keywords": [
+    "babel7"
+  ],
+  "author": "jovysun",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
+}
