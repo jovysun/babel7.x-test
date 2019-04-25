@@ -1,11 +1,5 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-
-var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
-
-var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
-
 require("core-js/modules/es6.array.copy-within");
 
 require("core-js/modules/es6.array.fill");
@@ -264,6 +258,12 @@ require("core-js/modules/web.dom.iterable");
 
 require("regenerator-runtime/runtime");
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 console.log([1, 2, 3].findIndex(function (x) {
   return x == 4;
 }));
@@ -277,17 +277,19 @@ var Robot =
 /*#__PURE__*/
 function () {
   function Robot(msg) {
-    (0, _classCallCheck2.default)(this, Robot);
+    _classCallCheck(this, Robot);
+
     this.message = msg;
   }
 
-  (0, _createClass2.default)(Robot, [{
+  _createClass(Robot, [{
     key: "say",
     value: function say() {
       // console.log(this.message)
       alertMe(this.message);
     }
   }]);
+
   return Robot;
 }();
 
